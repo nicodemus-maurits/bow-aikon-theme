@@ -108,6 +108,83 @@
   }
 }
 
+@mixin why-aikon-icons($icon-name: $icon-HightecXNatur) {
+  &::before {
+    content: $icon-name;
+    font-family: $aikon-font-family;
+    position: absolute;
+    font-size: 5em;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .why-aikon-container {
-  display: flex;
+  .why-aikon-text {
+    @include montserrat-regular(5rem);
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      top: 5px;
+      left: -110px;
+      border-top: 3px solid black;
+    }
+  }
+
+  .why-aikon-points-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .why-aikon-points {
+    @include montserrat-regular(1rem);
+    position: relative;
+    flex: 1 0 20%;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .HightecXNatur {
+    @include why-aikon-icons($icon-HightecXNatur);
+  }
+
+  .functionalDose {
+    @include why-aikon-icons($icon-functionalDose);
+  }
+  .bnh {
+    @include why-aikon-icons($icon-bnh);
+  }
+  .jungeHaut {
+    @include why-aikon-icons($icon-jungeHaut);
+  }
+  .fuerAlle {
+    @include why-aikon-icons($icon-fuerAlle);
+  }
+  .noBS {
+    @include why-aikon-icons($icon-noBS);
+  }
+  .nachhaltig {
+    @include why-aikon-icons($icon-nachhaltig);
+  }
+  .madeInDe {
+    @include why-aikon-icons($icon-madeInDe);
+  }
+  .violettGlas {
+    @include why-aikon-icons($icon-violettGlas);
+  }
+  .vegan {
+    @include why-aikon-icons($icon-vegan);
+  }
+  .tierversuchsfrei {
+    @include why-aikon-icons($icon-tierversuchsfrei);
+  }
+  .ohneSilikoneParabene {
+    @include why-aikon-icons($icon-ohneSilikoneParabene);
+  }
 }
