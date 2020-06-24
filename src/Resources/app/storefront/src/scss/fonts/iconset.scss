@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "#{$aikon-font-family}";
+  src: url("#{$aikon-assets-path}fonts/iconset/aikon-icons.ttf?sddgss")
+      format("truetype"),
+    url("#{$aikon-assets-path}fonts/iconset/aikon-icons.woff?sddgss")
+      format("woff"),
+    url("#{$aikon-assets-path}fonts/iconset/aikon-icons.svg?sddgss##{$aikon-font-family}")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.iconset-aikon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "#{$aikon-font-family}" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bnh {
+  &:before {
+    content: $icon-bnh;
+    color: $aikon-primary;
+  }
+}
+
+.icon-fuerAlle {
+  &:before {
+    content: $icon-fuerAlle;
+    color: $aikon-primary;
+  }
+}
+.icon-functionalDose {
+  &:before {
+    content: $icon-functionalDose;
+    color: $aikon-primary;
+  }
+}
+.icon-HightecXNatur {
+  &:before {
+    content: $icon-HightecXNatur;
+    color: $aikon-primary;
+  }
+}
+.icon-jungeHaut {
+  &:before {
+    content: $icon-jungeHaut;
+    color: $aikon-primary;
+  }
+}
+.icon-madeInDe {
+  &:before {
+    content: $icon-madeInDe;
+    color: $aikon-primary;
+  }
+}
+.icon-nachhaltig {
+  &:before {
+    content: $icon-nachhaltig;
+    color: $aikon-primary;
+  }
+}
+.icon-noBS {
+  &:before {
+    content: $icon-noBS;
+    color: $aikon-primary;
+  }
+}
+.icon-ohneSilikoneParabene {
+  &:before {
+    content: $icon-ohneSilikoneParabene;
+    color: $aikon-primary;
+  }
+}
+.icon-tierversuchsfrei {
+  &:before {
+    content: $icon-tierversuchsfrei;
+    color: $aikon-primary;
+  }
+}
+.icon-vegan {
+  &:before {
+    content: $icon-vegan;
+    color: $aikon-primary;
+  }
+}
+.icon-violettGlas {
+  &:before {
+    content: $icon-violettGlas;
+    color: $aikon-primary;
+  }
+}
