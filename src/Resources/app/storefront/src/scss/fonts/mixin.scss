@@ -12,8 +12,14 @@
   font-size: $size;
 }
 
+@mixin montserrat-medium($size: 1rem) {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: $size;
+}
+
 @mixin montserrat-bold($size: 1rem) {
   font-family: "Montserrat";
-  font-weight: 600;
+  font-weight: 700;
   font-size: $size;
 }
